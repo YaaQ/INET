@@ -1,0 +1,16 @@
+
+Name of QuantLet: INET-quantilelasso
+
+Published in: Industry Interdependency Dynamics in a Network Context
+
+Description: 'Generate the beta coefficients and lambda coefficients of the 1-step generalized predictive model on the return data of 49 USA industries                       under different stress situations (median, lowertail and uppertail) by using quantile lasso regression to reduce dimensions'
+
+Keywords: 'quantile regression, predictive power, tail, stress situation, dimension reduction, variable selection'
+
+Author: Ya Qian
+
+Submitted: Ya Qian
+
+Datafile: '49_Industry_Portfolios_Daily.CSV'
+
+Output: 'Beta and lambda coefficients of quantile lasso regression' 

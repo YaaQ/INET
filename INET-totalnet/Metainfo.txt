@@ -1,0 +1,16 @@
+
+Name of QuantLet: INET-totalnet
+
+Published in: Industry Interdependency Dynamics in a Network Context
+
+Description: 'Plot the interdependency networks of the return data of 49 USA industries                       under different stress situations (median, lowertail and uppertail) and find out the leading industries under each situation as well'
+
+Keywords: 'quantile regression, interdependency, network, tail, stress situation'
+
+Author: Ya Qian
+
+Submitted: Ya Qian
+
+Datafile: 'industryname.csv, beta_L_median.csv, beta_L_lowertail.csv,      beta_L_uppertail.csv'
+
+Output: 'Plot of interdependency networks and top 10 leading industries under different stress situations (median, lowertail and uppertail)' 

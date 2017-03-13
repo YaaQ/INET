@@ -1,0 +1,16 @@
+
+Name of QuantLet: INET-totalconn
+
+Published in: Industry Interdependency Dynamics in a Network Context
+
+Description: 'Plot the image maps of the predictive power of 49 USA industries return data                        under different stress situations (median, lowertail and uppertail)'
+
+Keywords: 'interdependency, network, stress situation, predictive power, image plot'
+
+Author: Ya Qian
+
+Submitted: Ya Qian
+
+Datafile: 'industryname.csv, beta_L_median.csv, beta_L_lowertail.csv,      beta_L_uppertail.csv'
+
+Output: 'Plot the images of the predictive power of industry return data under different stress situations (median, lowertail and uppertail)' 

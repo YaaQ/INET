@@ -1,0 +1,16 @@
+
+Name of QuantLet: INET-mwnet
+
+Published in: Industry Interdependency Dynamics in a Network Context
+
+Description: 'Plot the interdependency networks of the return data of 49 USA industries                       under different stress situations (median, lowertail and uppertail) for different time periods'
+
+Keywords: 'quantile regression, interdependency, network, tail, stress situation, movie window analysis'
+
+Author: Ya Qian
+
+Submitted: Ya Qian
+
+Datafile: 'industryname.csv, beta_L_median(1-22).csv, beta_L_lowertail(1-22).csv,      beta_L_uppertail(1-22).csv'
+
+Output: 'Plot of interdependency networks of the 49 industry returns under different stress situations (median, lowertail and uppertail) for various time periods'
