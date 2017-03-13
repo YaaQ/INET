@@ -1,5 +1,5 @@
 
-Name of QuantLet: INET-quantilelasso
+Name of QuantLet: INET-qlasso
 
 Published in: Industry Interdependency Dynamics in a Network Context
 
