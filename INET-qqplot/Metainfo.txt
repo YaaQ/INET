@@ -13,4 +13,4 @@ Submitted: Ya Qian
 
 Datafile: '49IPM1970.CSV'
 
-Output: ‘Quantile-quantile plot of the 49 industry portfolio monthly return'
+Output: 'Quantile-quantile plot of the 49 industry portfolio monthly return'
