@@ -11,6 +11,6 @@ Author: Ya Qian
 
 Submitted: Ya Qian
 
-Datafile: 'industryname.csv, beta_L_median(1-22).csv, beta_L_lowertail(1-22).csv,      beta_L_uppertail(1-22).csv'
+Datafile: 'industryname.csv, beta_L_median(1-15).csv, beta_L_lowertail(1-15).csv,      beta_L_uppertail(1-15).csv'
 
-Output: 'Plot of change of interdependency networks from time to time under different stress situations (median, lowertail and uppertail)' 
+Output: 'Plot of distance between the l_infinity distance v.s. maximum value of the negiboring matrices'

@@ -13,4 +13,4 @@ Submitted: Ya Qian
 
 Datafile: 'industryname.csv, beta_L_median.csv, beta_L_lowertail.csv,      beta_L_uppertail.csv'
 
-Output: 'Plot the images of the predictive power of industry return data under different stress situations (median, lowertail and uppertail)' 
+Output: 'Plot the images of the predictive power of industry return data under different stress situations (median, lowertail and uppertail) and summary of the connectedness characteristics under these situations' 

@@ -2,7 +2,7 @@
 rm(list = ls(all = TRUE))
 graphics.off()
 # set the working directory
-setwd("/Users/qianya/Library/Mobile Documents/com~apple~CloudDocs/ffdata")
+setwd("/Users/qianya/Library/Mobile Documents/com~apple~CloudDocs/ffdata/test")
 
 # install and load packages
 libraries = c("fGarch", "quantreg")
@@ -10,33 +10,27 @@ lapply(libraries, function(x) if (!(x %in% installed.packages())) {
   install.packages(x)
 })
 lapply(libraries, library, quietly = TRUE, character.only = TRUE)
-source("lqrl1_test.r")
+source("lqr1.r")
 source("quantilelasso.r")
 
 #read datafile
-D                = read.csv("49_Industry_Portfolios_Daily.CSV", header = TRUE, sep = ",", dec = "." )
+D                = read.csv("49IPM1970.CSV", header = TRUE, sep = ",", dec = "." )
 rownames(D)      = D[ ,1]
-DD               = D[ ,-1]
-DDD              = log(1+DD/100)
-stdresd          = DDD
-# Garch fitting of the data
-for (i in 1:ncol(DDD)){
-  fit            = garchFit(~garch(1, 1), data = DDD[,i], trace = F)
-  stdresd[,i]    = fit@residuals / fit@sigma.t
-}
+DD               = D[ ,-1]/100
+
 
 # quantile level
-tau              = 0.05
+tau              = 0.50
 # moving window size
-ws               = nrow(stdresd)
-step             = 126
-num              = as.integer((nrow(stdresd)-ws)/step)+1
+ws               = 36
+step             = 36
+num              = as.integer((nrow(DD)-ws)/step)+1
 
 # start the linear quantile lasso estimation for each moving window
 for (i in 1:num) {
   print(i)
   #yw  = y[((i-1)*step+1):((i-1)*step + ws)]
-  xx1            = stdresd[((i-1)*step+1):((i-1)*step + ws), ]
+  xx1            = DD[((i-1)*step+1):((i-1)*step + ws), ]
   
   # lambda calculated from linear quantile lasso
   lambda_l       = matrix(0, ncol(xx1), 1)
@@ -54,7 +48,7 @@ for (i in 1:num) {
     lambda_l[k]  = fit$lambda.in
     beta_l[k, ]  = fit$beta_in
   }
-  write.csv(beta_l, file = paste("beta_L_uppertail", i, ".csv",  sep = ""))
-  write.csv(lambda_l, file = paste("lambda_L_uppertail", i, ".csv", sep = ""))
+  write.csv(beta_l, file = paste("beta_L_median", i, ".csv",  sep = ""))
+  write.csv(lambda_l, file = paste("lambda_L_median", i, ".csv", sep = ""))
 } 
 
