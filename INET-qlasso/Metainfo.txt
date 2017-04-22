@@ -11,6 +11,6 @@ Author: Ya Qian
 
 Submitted: Ya Qian
 
-Datafile: '49_Industry_Portfolios_Daily.CSV'
+Datafile: '49IPM1970.CSV'
 
 Output: 'Beta and lambda coefficients of quantile lasso regression' 

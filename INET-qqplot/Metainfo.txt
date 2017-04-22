@@ -1,0 +1,16 @@
+
+Name of QuantLet: INET-qqplot
+
+Published in: Industry Interdependency Dynamics in a Network Context
+
+Description: 'Plot the quantile-quantile plot of the monthly return of 49 industry portfolios in USA'
+
+Keywords: 'quantile, normality, plot, qq-plot, kurtosis'
+
+Author: Ya Qian
+
+Submitted: Ya Qian
+
+Datafile: '49IPM1970.CSV'
+
+Output: 'Quantile-quantile plot of the 49 industry portfolio monthly return'

@@ -3,15 +3,15 @@ graphics.off()
 rm(list = ls(all=TRUE))
 
 # set the working directory
-setwd("/Users/qianya/Library/Mobile Documents/com~apple~CloudDocs/ffdata")
+#setwd("/Users/qianya/Library/Mobile Documents/com~apple~CloudDocs/ffdata/test")
 
-distance = matrix(0,21,4)
+distance           = matrix(0,14,4)
 
-for (s in 1:21){
+for (s in 1:14){
   #read datafiles
   industrynames    = read.csv("industrynames.csv", header = TRUE, sep = ",")
   industrynames    = industrynames[,-1]
-  datapath1        = paste("dynamiclassocoeff/beta_L_lowertail", s, ".csv", sep ="")
+  datapath1        = paste("dynamiclassocoeff/beta_L_median", s, ".csv", sep ="")
   data1            = read.csv(datapath1, header = TRUE, sep = ",", dec = ".")
   data1            = data1[,-1]
   Adjac1           = as.matrix(data1)
@@ -20,7 +20,7 @@ for (s in 1:21){
   rownames(Adjac1) = industrynames
   colnames(Adjac1) = industrynames
   
-  datapath2        = paste("dynamiclassocoeff/beta_L_lowertail", (s+1), ".csv", sep ="")
+  datapath2        = paste("dynamiclassocoeff/beta_L_median", (s+1), ".csv", sep ="")
   data2            = read.csv(datapath2, header = TRUE, sep = ",", dec = ".")
   data2            = data2[,-1]
   Adjac2           = as.matrix(data2)
@@ -39,7 +39,7 @@ for (s in 1:21){
   distance[s,4]    = max(Adjac1,Adjac2)
 }
 #plot the l_infinity distance v.s. maximum value of neighboring adjacency matrices
-matplot(1:21, distance[,3:4], type = "l", lwd = 3, col = 1:2, 
+matplot(1:14, distance[,3:4], type = "l", lwd = 3, col = 1:2,  
         xlab = "pairs of neighboring time windows", ylab = "distances")
 #save distance tables
-write.csv(distance, file = "matricesdistance_lowertail.csv")
+write.table(format(distance,digits =4), file = "matricesdistance(050).txt", sep = "&")

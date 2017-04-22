@@ -1,0 +1,16 @@
+
+Name of QuantLet: INET-RMSE
+
+Published in: Industry Interdependency Dynamics in a Network Context
+
+Description: 'Calculate the root mean square error (RMSE) of the one-month forward return prediction under different tail levels and compare the results'
+
+Keywords: 'quantile regression, interdependency, network, tail, RMSE, predictability'
+
+Author: Ya Qian
+
+Submitted: Ya Qian
+
+Datafile: '49IPM1970.CSV'
+
+Output: 'RMSE of the one-month forward return prediction and plot of the comparison under the three market situations'

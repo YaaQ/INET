@@ -1,0 +1,16 @@
+
+Name of QuantLet: INET-nettrading
+
+Published in: Industry Interdependency Dynamics in a Network Context
+
+Description: 'Calculate the annualised cumulative excess return of 4 network based trading strategies and compare them with market portfolio'
+
+Keywords: 'quantile regression, interdependency, network, tail, trading strategy'
+
+Author: Ya Qian
+
+Submitted: Ya Qian
+
+Datafile: '49IPM1970.CSV, FF3factors.CSV'
+
+Output: 'Annualised cumulative excess return of 4 network based trading strategies as well as that of market portfolio'

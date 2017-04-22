@@ -11,6 +11,6 @@ Author: Ya Qian
 
 Submitted: Ya Qian
 
-Datafile: 'industryname.csv, beta_L_median(1-22).csv, beta_L_lowertail(1-22).csv,      beta_L_uppertail(1-22).csv'
+Datafile: 'industryname.csv, beta_L_median(1-15).csv, beta_L_lowertail(1-15).csv,      beta_L_uppertail(1-15).csv'
 
-Output: 'Plot of interdependency networks of the 49 industry returns under different stress situations (median, lowertail and uppertail) for various time periods'
+Output: 'Plots of interdependency networks of the 49 industry returns under different stress situations (median, lowertail and uppertail) for various time periods'
